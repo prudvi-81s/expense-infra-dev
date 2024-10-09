@@ -16,36 +16,42 @@ variable "common_tags" {
 
 variable "mysql_sg_tags" {
     default = {
-        component = "mysql"
+        Component = "mysql"
     }
 }
 
 variable "backend_sg_tags" {
     default = {
-        component = "backend"
+        Component = "backend"
     }
 }
 
 variable "frontend_sg_tags" {
     default = {
-        component = "frontend"
+        Component = "frontend"
     }
 }
 
 variable "bastion_sg_tags" {
     default = {
-        component = "bastion"
+        Component = "bastion"
     }
 }
 
 variable "ansible_sg_tags" {
     default = {
-        component = "ansible"
+        Component = "ansible"
     }
 }
 
 variable "app_alb_sg_tags" {
     default = {
-        component = "app_alb"
+        Component = "app_alb"
+    }
+}
+
+variable "web_alb_sg_tags" {
+    default = {
+        Component = "web-alb"
     }
 }
